@@ -1,0 +1,44 @@
+/* Ensure the navbar is not fixed to the top */
+.navbar {
+  position: relative;
+}
+
+/* Style for the dropdown menu to take full width and have a distinct background color */
+.navbar .navbar-nav {
+  width: 100%;
+  background-color: #f8f8f8;
+}
+
+/* Hide the dropdown menu items in non-mobile views */
+.navbar .navbar-nav > li {
+  display: none;
+}
+
+/* Show the dropdown menu items only in mobile view */
+@media (max-width: 767px) {
+  .navbar .navbar-nav > li {
+    display: block;
+  }
+}
+
+/* Style for the 'Our Menu' heading to be centered */
+.text-center {
+  text-align: center;
+}
+
+/* Style for the tall section */
+.tall-section {
+  height: 1000px;
+  background-color: #ddd;
+  margin: 15px 0;
+}
+
+/* Optional styles for desktop and tablet layouts */
+@media (min-width: 768px) {
+  /* Styles for desktop and tablet view go here */
+}
+
+/* Optional styles for mobile layout */
+@media (max-width: 767px) {
+  /* Styles for mobile view go here */
+}
