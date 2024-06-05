@@ -1,44 +1,48 @@
-/* Ensure the navbar is not fixed to the top */
 .navbar {
-  position: relative;
+  background-color: #fff;
+  margin-bottom: 0;
 }
 
-/* Style for the dropdown menu to take full width and have a distinct background color */
-.navbar .navbar-nav {
-  width: 100%;
-  background-color: #f8f8f8;
+.navbar-brand {
+  font-size: 2em;
 }
 
-/* Hide the dropdown menu items in non-mobile views */
-.navbar .navbar-nav > li {
-  display: none;
+.navbar-collapse.collapse {
+  display: none !important;
 }
 
-/* Show the dropdown menu items only in mobile view */
 @media (max-width: 767px) {
-  .navbar .navbar-nav > li {
-    display: block;
+  .navbar-collapse.collapse {
+    display: block !important;
   }
 }
 
-/* Style for the 'Our Menu' heading to be centered */
-.text-center {
+.navbar-header {
+  float: left;
+}
+
+.navbar-toggle {
+  background-color: #ccc;
+}
+
+.collapse.navbar-collapse {
+  background-color: #eee;
+}
+
+.page-heading {
   text-align: center;
+  margin-top: 2em;
 }
 
-/* Style for the tall section */
-.tall-section {
-  height: 1000px;
-  background-color: #ddd;
-  margin: 15px 0;
+.full-width-section {
+  background-color: #f5f5f5;
+  min-height: 1000px;
+  padding: 2em;
 }
 
-/* Optional styles for desktop and tablet layouts */
-@media (min-width: 768px) {
-  /* Styles for desktop and tablet view go here */
-}
-
-/* Optional styles for mobile layout */
-@media (max-width: 767px) {
-  /* Styles for mobile view go here */
-}
+/* Optional sections (uncomment to activate) */
+section {
+  margin-bottom: 2em;
+  padding: 2em;
+  border-radius: 5px;
+  background-color: #eee
